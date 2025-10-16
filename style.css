@@ -1,0 +1,82 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0B9BE3;
+}
+
+.experience {
+    color: navy;
+    padding: 0.5rem;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+
+}
+
+#imaging {
+    padding: 1rem;
+    margin: 1rem;
+    border: black;
+    border-style: black;
+    border-width: 4px;
+    border-radius: 20%;
+}
+
+#hobbies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4rem 0 4rem 0;
+    width: 80%;
+    margin: auto;
+
+}
+
+nav ul{
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    text-align: left;
+    width: 80%;
+}
+
+nav ul li:hover {
+    color: #65499D;
+    cursor: pointer;
+}
+
+img {
+    border-width: 2px;
+    border-radius: 10%;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+hr {
+    width: 70%;
+    border-radius: 90%;
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#experiences {
+    margin: 0.1rem;
+}
+
+a {
+    text-decoration: none;
+}
