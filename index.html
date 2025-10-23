@@ -3,72 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyas Thirumale | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <title>Shreyas's Personal Website</title>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="mailto:shreyas@example.com">Contact</a></li>
+      <li><a href="mailto:shreyas.thirumale25@gmail.com">Contact</a></li>
     </ul>
   </nav>
 
-  <div id="hero">
-    <div>
-      <img src="https://via.placeholder.com/150" alt="Picture of Shreyas" id="homepic" />
-    </div>
-    <div>
+  <header id="hero">
+    <div class="hero-content">
+      <img src="images/file.png" alt="Shreyas Thirumale" id="profile-pic" />
       <h1>Shreyas Thirumale</h1>
-      <h3>CS Student @ UMD</h3>
+      <h3>Computer Science Student @ UMD</h3>
+      <p>Passionate about machine learning, software development, and creating impactful solutions through technology.</p>
+      <a href="projects.html" class="btn">View My Work</a>
     </div>
-  </div>
+  </header>
 
-  <hr />
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science major at the University of Maryland, currently pursuing the Machine Learning and Data Science tracks. I enjoy exploring the intersection of technology, innovation, and real-world problem solving. With experience in full-stack development, iOS apps, and research, I’m always excited to learn, build, and collaborate.
+    </p>
+  </section>
 
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <div class="hobby">
-      <h3>Photography</h3>
-      <img src="https://via.placeholder.com/150" alt="Soccer" id="imaging" />
-    </div>
-    <div class="hobby">
-      <h3>Gaming</h3>
-      <img src="https://via.placeholder.com/150" alt="Saxophone" />
-    </div>
-    <div class="hobby">
-      <h3>Traveling</h3>
-      <img src="https://via.placeholder.com/150" alt="Gaming" />
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">C++</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">SwiftUI</div>
+      <div class="skill-card">HTML/CSS</div>
+      <div class="skill-card">APIs</div>
     </div>
   </section>
 
-  <hr />
-
   <section id="experiences">
-    <h2>Experiences</h2>
+    <h2>Experience</h2>
     <div class="experience">
-      <h3>Internship at XYZ Corp</h3>
+      <h3>Project Lead – UMD Open Sourcery Club</h3>
       <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+        Leading development of Zenith Study Hub, a productivity platform built with React/Next.js, Express.js, Node.js, and PostgreSQL. Managing Agile sprints, conducting code reviews, and delivering key features like Focus Mode.
       </p>
     </div>
     <div class="experience">
-      <h3>Research Assistant</h3>
+      <h3>Bootcamp Member – App Development Club</h3>
       <p>
-        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+        Selected among top 10% for App Dev Bootcamp. Building full-stack web applications learning HTML/CSS/Vanilla JavaScript and MERN stack developing real-time personal projects
       </p>
     </div>
     <div class="experience">
-      <h3>Hackathon Participant</h3>
+      <h3>Undergraduate Researcher – University of Maryland</h3>
       <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+        Researching AI algorithms and mofels to analyze human speech patterns to find correlations between human voice and glucose fluctuations to predict type II diabetes.
       </p>
     </div>
   </section>
 
   <footer>
-    <p style="text-align:center;">&copy; 2025 Shreyas Thirumale</p>
+    <p>&copy; 2025 Shreyas Thirumale | <a href="mailto:shreyas.thirumale25@gmail.com">Contact</a></p>
   </footer>
 </body>
 </html>
