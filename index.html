@@ -6,7 +6,7 @@
   <title>Shreyas Thirumale | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="fade-in">
   <nav>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
@@ -16,23 +16,25 @@
   </nav>
 
   <header id="hero">
-    <div class="hero-content">
-      <img src="images/file.png" alt="Shreyas Thirumale" id="profile-pic" />
+    <div class="hero-text">
       <h1>Shreyas Thirumale</h1>
-      <h3>Computer Science Student @ UMD</h3>
+      <h3>Computer Science + Business Analytics @ UMD</h3>
       <p>Passionate about machine learning, software development, and creating impactful solutions through technology.</p>
       <a href="projects.html" class="btn">View My Work</a>
     </div>
+    <div class="hero-image">
+      <img src="images/portfolio-pfp.jpg" alt="Shreyas Thirumale" id="profile-pic" />
+    </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="scroll-reveal">
     <h2>About Me</h2>
     <p>
-      I’m a Computer Science major at the University of Maryland, currently pursuing the Machine Learning track. I enjoy exploring the intersection of technology, innovation, and real-world problem solving. With experience in full-stack development, app and web development, as well as research, I’m always excited to learn, build, and collaborate.
+      I'm a Computer Science major and Business Analytics minor at the University of Maryland, currently pursuing the Machine Learning track. I enjoy exploring the intersection of technology, innovation, and real-world problem solving. With experience in full-stack development, app and web development, as well as research, I'm always excited to learn, build, and collaborate.
     </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="scroll-reveal">
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">Java</div>
@@ -46,21 +48,27 @@
     </div>
   </section>
 
-  <section id="experiences">
+  <section id="experiences" class="scroll-reveal">
     <h2>Related Experience</h2>
-    <div class="experience">
+    <div class="experience scroll-reveal">
+      <h3>Club Officer - Systems Administrator – UMD Cybersecurity Club</h3>
+      <p>
+        Manage and secure technical infrastructure supporting 1,600+ members, of the club's website, Discord, and GitHub. Develop and monitor the club website to improve usability, traffic, and system reliability (UptimeRobot); implement version control and updates through GitHub. Support Capture-the-Flag (CTF) operations by maintaining containerized environments (Docker, NGINX, CTFd) and ensuring platform scalability and uptime.
+      </p>
+    </div>
+    <div class="experience scroll-reveal">
       <h3>Lead Project Developer – UMD Open Sourcery Club</h3>
       <p>
         Leading development of Zenith Study Hub, a productivity platform built with React/Next.js, Express.js, Node.js, and PostgreSQL. Managing Agile sprints, conducting code reviews, and delivering key features like Focus Mode.
       </p>
     </div>
-    <div class="experience">
+    <div class="experience scroll-reveal">
       <h3>Bootcamp Member – App Development Club</h3>
       <p>
         Selected among top 10% of applicants for the App Dev Bootcamp. Building full-stack web applications learning HTML/CSS/Vanilla JavaScript and MERN stack developing real-time personal projects
       </p>
     </div>
-    <div class="experience">
+    <div class="experience scroll-reveal">
       <h3>Undergraduate Researcher – University of Maryland</h3>
       <p>
         Researching AI algorithms and mofels to analyze human speech patterns to find correlations between human voice and glucose fluctuations to predict type II diabetes.
@@ -71,5 +79,7 @@
   <footer>
     <p>&copy; 2025 Shreyas Thirumale | <a href="mailto:shreyas.thirumale25@gmail.com">Contact</a></p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
