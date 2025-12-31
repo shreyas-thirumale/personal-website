@@ -13,6 +13,338 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* Floating space particles */
+.space-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(168, 85, 247, 0.9);
+  border-radius: 50%;
+  animation: floatAround 6s infinite ease-in-out;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+.particle:nth-child(1) {
+  width: 4px;
+  height: 4px;
+  left: 10%;
+  top: 20%;
+  animation: floatAround 8s infinite ease-in-out;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  width: 5px;
+  height: 5px;
+  left: 20%;
+  top: 60%;
+  animation: driftSlow 10s infinite ease-in-out;
+  animation-delay: 1s;
+  background: rgba(192, 192, 192, 0.8);
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+.particle:nth-child(3) {
+  width: 3px;
+  height: 3px;
+  left: 30%;
+  top: 80%;
+  animation: zigzag 7s infinite ease-in-out;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(4) {
+  width: 6px;
+  height: 6px;
+  left: 40%;
+  top: 30%;
+  animation: floatAround 12s infinite ease-in-out;
+  animation-delay: 3s;
+  background: rgba(232, 121, 249, 0.8);
+  box-shadow: 0 0 12px rgba(232, 121, 249, 0.6);
+}
+
+.particle:nth-child(5) {
+  width: 4px;
+  height: 4px;
+  left: 50%;
+  top: 70%;
+  animation: driftSlow 9s infinite ease-in-out;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(6) {
+  width: 5px;
+  height: 5px;
+  left: 60%;
+  top: 40%;
+  animation: zigzag 11s infinite ease-in-out;
+  animation-delay: 5s;
+  background: rgba(192, 192, 192, 0.7);
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.4);
+}
+
+.particle:nth-child(7) {
+  width: 3px;
+  height: 3px;
+  left: 70%;
+  top: 90%;
+  animation: floatAround 6s infinite ease-in-out;
+  animation-delay: 6s;
+}
+
+.particle:nth-child(8) {
+  width: 4px;
+  height: 4px;
+  left: 80%;
+  top: 50%;
+  animation: driftSlow 8s infinite ease-in-out;
+  animation-delay: 7s;
+}
+
+.particle:nth-child(9) {
+  width: 5px;
+  height: 5px;
+  left: 90%;
+  top: 25%;
+  animation: zigzag 10s infinite ease-in-out;
+  animation-delay: 8s;
+  background: rgba(168, 85, 247, 0.7);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.particle:nth-child(10) {
+  width: 3px;
+  height: 3px;
+  left: 15%;
+  top: 75%;
+  animation: floatAround 7s infinite ease-in-out;
+  animation-delay: 9s;
+}
+
+.particle:nth-child(11) {
+  width: 4px;
+  height: 4px;
+  left: 25%;
+  top: 35%;
+  animation: driftSlow 12s infinite ease-in-out;
+  animation-delay: 10s;
+  background: rgba(232, 121, 249, 0.6);
+  box-shadow: 0 0 8px rgba(232, 121, 249, 0.4);
+}
+
+.particle:nth-child(12) {
+  width: 6px;
+  height: 6px;
+  left: 35%;
+  top: 85%;
+  animation: zigzag 9s infinite ease-in-out;
+  animation-delay: 11s;
+}
+
+.particle:nth-child(13) {
+  width: 3px;
+  height: 3px;
+  left: 45%;
+  top: 15%;
+  animation: floatAround 11s infinite ease-in-out;
+  animation-delay: 12s;
+  background: rgba(192, 192, 192, 0.9);
+  box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
+}
+
+.particle:nth-child(14) {
+  width: 5px;
+  height: 5px;
+  left: 55%;
+  top: 65%;
+  animation: driftSlow 8s infinite ease-in-out;
+  animation-delay: 13s;
+}
+
+.particle:nth-child(15) {
+  width: 4px;
+  height: 4px;
+  left: 65%;
+  top: 45%;
+  animation: zigzag 10s infinite ease-in-out;
+  animation-delay: 14s;
+}
+
+.particle:nth-child(16) {
+  width: 3px;
+  height: 3px;
+  left: 75%;
+  top: 10%;
+  animation: floatAround 7s infinite ease-in-out;
+  animation-delay: 15s;
+}
+
+.particle:nth-child(17) {
+  width: 5px;
+  height: 5px;
+  left: 85%;
+  top: 80%;
+  animation: driftSlow 9s infinite ease-in-out;
+  animation-delay: 16s;
+  background: rgba(168, 85, 247, 0.6);
+}
+
+.particle:nth-child(18) {
+  width: 4px;
+  height: 4px;
+  left: 95%;
+  top: 55%;
+  animation: zigzag 11s infinite ease-in-out;
+  animation-delay: 17s;
+}
+
+.particle:nth-child(19) {
+  width: 6px;
+  height: 6px;
+  left: 5%;
+  top: 95%;
+  animation: floatAround 8s infinite ease-in-out;
+  animation-delay: 18s;
+  background: rgba(232, 121, 249, 0.7);
+  box-shadow: 0 0 12px rgba(232, 121, 249, 0.5);
+}
+
+.particle:nth-child(20) {
+  width: 3px;
+  height: 3px;
+  left: 12%;
+  top: 5%;
+  animation: driftSlow 6s infinite ease-in-out;
+  animation-delay: 19s;
+}
+
+.particle:nth-child(21) {
+  width: 4px;
+  height: 4px;
+  left: 22%;
+  top: 88%;
+  animation: zigzag 12s infinite ease-in-out;
+  animation-delay: 20s;
+  background: rgba(192, 192, 192, 0.5);
+}
+
+.particle:nth-child(22) {
+  width: 5px;
+  height: 5px;
+  left: 32%;
+  top: 22%;
+  animation: floatAround 9s infinite ease-in-out;
+  animation-delay: 21s;
+}
+
+.particle:nth-child(23) {
+  width: 3px;
+  height: 3px;
+  left: 42%;
+  top: 78%;
+  animation: driftSlow 10s infinite ease-in-out;
+  animation-delay: 22s;
+}
+
+.particle:nth-child(24) {
+  width: 4px;
+  height: 4px;
+  left: 52%;
+  top: 12%;
+  animation: zigzag 8s infinite ease-in-out;
+  animation-delay: 23s;
+}
+
+.particle:nth-child(25) {
+  width: 6px;
+  height: 6px;
+  left: 62%;
+  top: 92%;
+  animation: floatAround 11s infinite ease-in-out;
+  animation-delay: 24s;
+  background: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.7);
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(50px, -30px) rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-40px, -60px) rotate(180deg);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(60px, -20px) rotate(270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(360deg);
+    opacity: 0.4;
+  }
+}
+
+@keyframes driftSlow {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 0.5;
+  }
+  33% {
+    transform: translate(-70px, 40px) rotate(120deg);
+    opacity: 1;
+  }
+  66% {
+    transform: translate(80px, -50px) rotate(240deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes zigzag {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0.3;
+  }
+  20% {
+    transform: translate(30px, -40px);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translate(-50px, -20px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(40px, -60px);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translate(-30px, -10px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 0.3;
+  }
 }
 
 /* Page load fade-in animation */
