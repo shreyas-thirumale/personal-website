@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Orbitron:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
 
 /* DEVCOM ARL Color Palette
    --gold:       #C8A84B  (primary accent)
@@ -42,34 +42,24 @@ body {
   background: rgba(200, 168, 75, 0.8);
   border-radius: 50%;
   animation: floatAround 6s infinite ease-in-out;
-  box-shadow: 0 0 8px rgba(200, 168, 75, 0.5);
+  box-shadow: 0 0 6px rgba(200, 168, 75, 0.4);
 }
 
-.particle:nth-child(1)  { width: 4px; height: 4px; left: 10%; top: 20%; animation: floatAround 8s infinite ease-in-out; animation-delay: 0s; }
-.particle:nth-child(2)  { width: 5px; height: 5px; left: 20%; top: 60%; animation: driftSlow 10s infinite ease-in-out; animation-delay: 1s; background: rgba(255, 215, 0, 0.6); box-shadow: 0 0 10px rgba(255, 215, 0, 0.4); }
-.particle:nth-child(3)  { width: 3px; height: 3px; left: 30%; top: 80%; animation: zigzag 7s infinite ease-in-out; animation-delay: 2s; }
-.particle:nth-child(4)  { width: 6px; height: 6px; left: 40%; top: 30%; animation: floatAround 12s infinite ease-in-out; animation-delay: 3s; background: rgba(200, 168, 75, 0.9); box-shadow: 0 0 12px rgba(200, 168, 75, 0.6); }
-.particle:nth-child(5)  { width: 4px; height: 4px; left: 50%; top: 70%; animation: driftSlow 9s infinite ease-in-out; animation-delay: 4s; }
-.particle:nth-child(6)  { width: 5px; height: 5px; left: 60%; top: 40%; animation: zigzag 11s infinite ease-in-out; animation-delay: 5s; background: rgba(255, 215, 0, 0.5); box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-.particle:nth-child(7)  { width: 3px; height: 3px; left: 70%; top: 90%; animation: floatAround 6s infinite ease-in-out; animation-delay: 6s; }
-.particle:nth-child(8)  { width: 4px; height: 4px; left: 80%; top: 50%; animation: driftSlow 8s infinite ease-in-out; animation-delay: 7s; }
-.particle:nth-child(9)  { width: 5px; height: 5px; left: 90%; top: 25%; animation: zigzag 10s infinite ease-in-out; animation-delay: 8s; background: rgba(200, 168, 75, 0.7); box-shadow: 0 0 10px rgba(200, 168, 75, 0.4); }
-.particle:nth-child(10) { width: 3px; height: 3px; left: 15%; top: 75%; animation: floatAround 7s infinite ease-in-out; animation-delay: 9s; }
-.particle:nth-child(11) { width: 4px; height: 4px; left: 25%; top: 35%; animation: driftSlow 12s infinite ease-in-out; animation-delay: 10s; background: rgba(255, 215, 0, 0.6); box-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
-.particle:nth-child(12) { width: 6px; height: 6px; left: 35%; top: 85%; animation: zigzag 9s infinite ease-in-out; animation-delay: 11s; }
-.particle:nth-child(13) { width: 3px; height: 3px; left: 45%; top: 15%; animation: floatAround 11s infinite ease-in-out; animation-delay: 12s; background: rgba(200, 168, 75, 0.9); box-shadow: 0 0 8px rgba(200, 168, 75, 0.5); }
-.particle:nth-child(14) { width: 5px; height: 5px; left: 55%; top: 65%; animation: driftSlow 8s infinite ease-in-out; animation-delay: 13s; }
-.particle:nth-child(15) { width: 4px; height: 4px; left: 65%; top: 45%; animation: zigzag 10s infinite ease-in-out; animation-delay: 14s; }
-.particle:nth-child(16) { width: 3px; height: 3px; left: 75%; top: 10%; animation: floatAround 7s infinite ease-in-out; animation-delay: 15s; }
-.particle:nth-child(17) { width: 5px; height: 5px; left: 85%; top: 80%; animation: driftSlow 9s infinite ease-in-out; animation-delay: 16s; background: rgba(200, 168, 75, 0.6); }
-.particle:nth-child(18) { width: 4px; height: 4px; left: 95%; top: 55%; animation: zigzag 11s infinite ease-in-out; animation-delay: 17s; }
-.particle:nth-child(19) { width: 6px; height: 6px; left: 5%;  top: 95%; animation: floatAround 8s infinite ease-in-out; animation-delay: 18s; background: rgba(255, 215, 0, 0.7); box-shadow: 0 0 12px rgba(255, 215, 0, 0.5); }
-.particle:nth-child(20) { width: 3px; height: 3px; left: 12%; top: 5%;  animation: driftSlow 6s infinite ease-in-out; animation-delay: 19s; }
-.particle:nth-child(21) { width: 4px; height: 4px; left: 22%; top: 88%; animation: zigzag 12s infinite ease-in-out; animation-delay: 20s; background: rgba(200, 168, 75, 0.5); }
-.particle:nth-child(22) { width: 5px; height: 5px; left: 32%; top: 22%; animation: floatAround 9s infinite ease-in-out; animation-delay: 21s; }
-.particle:nth-child(23) { width: 3px; height: 3px; left: 42%; top: 78%; animation: driftSlow 10s infinite ease-in-out; animation-delay: 22s; }
-.particle:nth-child(24) { width: 4px; height: 4px; left: 52%; top: 12%; animation: zigzag 8s infinite ease-in-out; animation-delay: 23s; }
-.particle:nth-child(25) { width: 6px; height: 6px; left: 62%; top: 92%; animation: floatAround 11s infinite ease-in-out; animation-delay: 24s; background: rgba(200, 168, 75, 0.8); box-shadow: 0 0 14px rgba(200, 168, 75, 0.6); }
+.particle:nth-child(1)  { width: 4px; height: 4px; left: 8%;  top: 15%; animation: floatAround 8s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(2)  { width: 5px; height: 5px; left: 22%; top: 55%; animation: driftSlow 10s infinite ease-in-out; animation-delay: 0s; background: rgba(255, 215, 0, 0.6); box-shadow: none; }
+.particle:nth-child(3)  { width: 3px; height: 3px; left: 38%; top: 80%; animation: zigzag 7s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(4)  { width: 5px; height: 5px; left: 52%; top: 25%; animation: floatAround 11s infinite ease-in-out; animation-delay: 0s; background: rgba(200, 168, 75, 0.9); box-shadow: none; }
+.particle:nth-child(5)  { width: 4px; height: 4px; left: 67%; top: 65%; animation: driftSlow 9s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(6)  { width: 3px; height: 3px; left: 80%; top: 40%; animation: zigzag 8s infinite ease-in-out; animation-delay: 0s; background: rgba(255, 215, 0, 0.5); box-shadow: none; }
+.particle:nth-child(7)  { width: 5px; height: 5px; left: 91%; top: 20%; animation: floatAround 12s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(8)  { width: 4px; height: 4px; left: 15%; top: 88%; animation: driftSlow 7s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(9)  { width: 3px; height: 3px; left: 45%; top: 10%; animation: zigzag 9s infinite ease-in-out; animation-delay: 0s; background: rgba(200, 168, 75, 0.7); box-shadow: none; }
+.particle:nth-child(10) { width: 4px; height: 4px; left: 73%; top: 90%; animation: floatAround 10s infinite ease-in-out; animation-delay: 0s; }
+.particle:nth-child(11) { width: 5px; height: 5px; left: 30%; top: 42%; animation: driftSlow 11s infinite ease-in-out; animation-delay: 0s; background: rgba(255, 215, 0, 0.6); box-shadow: none; }
+.particle:nth-child(12) { width: 3px; height: 3px; left: 58%; top: 72%; animation: zigzag 6s infinite ease-in-out; animation-delay: 0s; }
+
+/* Hide particles 13-25 — not needed */
+.particle:nth-child(n+13) { display: none; }
 
 @keyframes floatAround {
   0%   { transform: translate(0px, 0px) rotate(0deg); opacity: 0.4; }
@@ -433,7 +423,7 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
 #experiences h2,
 .page-header h1 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -488,6 +478,7 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
 #experiences {
   padding: 3rem 2rem;
   background-color: #0a0e1a;
+  text-align: center;
 }
 
 .experience {
@@ -500,6 +491,45 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
   max-width: 700px;
   box-shadow: 0 4px 16px rgba(200, 168, 75, 0.1);
   transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.experience-preview {
+  position: absolute;
+  left: calc(100% + 16px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  background: #0a0e1a;
+  border: 2px solid rgba(200, 168, 75, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(-50%) translateX(8px);
+  z-index: 50;
+}
+
+.experience-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.experience:hover .experience-preview {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* flip to left side if near right edge */
+@media (max-width: 1100px) {
+  .experience-preview {
+    left: auto;
+    right: calc(100% + 16px);
+  }
 }
 
 .experience h3 {
@@ -521,23 +551,229 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
 
 .page-header {
   text-align: center;
-  padding: 3rem 2rem 2rem;
+  padding: 3.5rem 2rem 2rem;
   background: #0a0e1a;
 }
 
 #projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem 4rem;
   background-color: #0a0e1a;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.carousel-track-wrapper {
+  overflow: visible;
+  width: 100%;
+  perspective: 1200px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 560px;
+  transform-style: preserve-3d;
+}
+
+/* Each card is positioned absolutely and transformed based on its slot */
+.carousel-track .project-card {
+  position: absolute;
+  width: 360px;
+  min-width: 360px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s ease,
+              box-shadow 0.5s ease;
+  transform-origin: center center;
+  cursor: pointer;
+}
+
+/* center */
+.carousel-track .project-card[data-pos="0"] {
+  transform: translateX(0) scale(1) rotateY(0deg);
+  opacity: 1;
+  z-index: 10;
+}
+
+/* one to the right */
+.carousel-track .project-card[data-pos="1"] {
+  transform: translateX(370px) scale(0.78) rotateY(-22deg);
+  opacity: 0.45;
+  z-index: 5;
+}
+
+/* one to the left */
+.carousel-track .project-card[data-pos="-1"] {
+  transform: translateX(-370px) scale(0.78) rotateY(22deg);
+  opacity: 0.45;
+  z-index: 5;
+}
+
+/* two+ to the right (hidden) */
+.carousel-track .project-card[data-pos="2"],
+.carousel-track .project-card[data-pos="3"] {
+  transform: translateX(600px) scale(0.55) rotateY(-35deg);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* two+ to the left (hidden) */
+.carousel-track .project-card[data-pos="-2"],
+.carousel-track .project-card[data-pos="-3"] {
+  transform: translateX(-600px) scale(0.55) rotateY(35deg);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Screenshot inside card */
+.project-screenshot {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(200, 168, 75, 0.2);
+}
+
+.project-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card[data-pos="0"]:hover .project-screenshot img {
+  transform: scale(1.05);
+}
+
+.carousel-arrow {
+  background: rgba(200, 168, 75, 0.1);
+  border: 2px solid rgba(200, 168, 75, 0.4);
+  color: #C8A84B;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  position: relative;
+}
+
+.carousel-arrow:hover {
+  background: rgba(200, 168, 75, 0.25);
+  border-color: #C8A84B;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(200, 168, 75, 0.4);
+}
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(200, 168, 75, 0.25);
+  border: 1px solid rgba(200, 168, 75, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: #C8A84B;
+  box-shadow: 0 0 10px rgba(200, 168, 75, 0.6);
+  transform: scale(1.3);
+}
+
+/* Purple theme */
+body.theme-purple .carousel-arrow {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.4);
+  color: #c084fc;
+}
+body.theme-purple .carousel-arrow:hover {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+body.theme-purple .carousel-dot {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+body.theme-purple .carousel-dot.active {
+  background: #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+body.theme-purple .project-screenshot {
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+/* Pokémon theme */
+body.theme-pokemon #projects {
+  background: #F0EAD6;
+}
+body.theme-pokemon .carousel-arrow {
+  background: #e8dfc8;
+  border: 3px solid #1a1f3c;
+  border-radius: 0;
+  color: #C03028;
+  box-shadow: 3px 3px 0 #1a1f3c;
+}
+body.theme-pokemon .carousel-arrow:hover {
+  background: #C03028;
+  color: #F8C030;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #1a1f3c;
+}
+body.theme-pokemon .carousel-dot {
+  background: #e8dfc8;
+  border: 2px solid #1a1f3c;
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+}
+body.theme-pokemon .carousel-dot.active {
+  background: #C03028;
+  box-shadow: 2px 2px 0 #1a1f3c;
+  transform: none;
+}
+body.theme-pokemon .project-screenshot {
+  border: 2px solid #1a1f3c;
+  border-radius: 0;
 }
 
 .project-card {
   border-radius: 8px;
-  padding: 2rem;
-  width: 320px;
+  padding: 2rem 2rem 2.5rem;
+  width: 360px;
   box-shadow: 0 4px 20px rgba(200, 168, 75, 0.1);
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -547,11 +783,51 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
+  gap: 0.6rem;
+}
+
+.project-preview {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: 300px;
+  background: #0a0e1a;
+  border: 2px solid rgba(200, 168, 75, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 50;
+}
+
+.project-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card:hover .project-preview {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+body.theme-pokemon .project-preview {
+  border: 3px solid #1a1f3c;
+  border-radius: 0;
+  background: #e8dfc8;
+  box-shadow: 4px 4px 0 #1a1f3c;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 8px 32px rgba(200, 168, 75, 0.4);
+}
+
+.carousel-track .project-card[data-pos="0"]:hover {
+  box-shadow: 0 12px 40px rgba(200, 168, 75, 0.6);
 }
 
 .project-icon {
@@ -587,6 +863,7 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
 .project-tech {
   display: flex;
   flex-wrap: wrap;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   gap: 0.5rem;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -601,7 +878,9 @@ body.theme-purple .arl-research-icon { color: #c084fc; }
   font-weight: 500;
   border: 1px solid rgba(200, 168, 75, 0.3);
   letter-spacing: 0.3px;
-  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif !important;
+  text-transform: none !important;
+  font-variant: normal !important;
 }
 
 .github-link {
@@ -873,3 +1152,259 @@ body.theme-purple .particle:nth-child(25) { background: rgba(168, 85, 247, 0.8);
 body.theme-purple .theme-switcher {
   border-color: rgba(255, 255, 255, 0.08);
 }
+
+/* ══════════════════════════════════════════
+   POKÉMON / GAMEBOY THEME
+   Palette: cream #F0EAD6, navy #1a1f3c,
+   accent red #C03028, accent yellow #F8C030
+   ══════════════════════════════════════════ */
+
+/* Regular cursor — same default, just navy tint on hover for pokemon theme */
+body.theme-pokemon,
+body.theme-pokemon * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect x='0' y='0' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='0' y='2' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='0' y='4' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='0' y='6' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='0' y='8' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='0' y='10' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='2' y='2' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='2' y='4' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='2' y='6' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='2' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='4' y='4' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='4' y='6' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='4' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='6' y='6' width='2' height='2' fill='%231a1f3c'/%3E%3Crect x='6' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='8' y='8' width='2' height='2' fill='%231a1f3c'/%3E%3C/svg%3E") 0 0, default !important;
+}
+
+body.theme-pokemon a,
+body.theme-pokemon button {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect x='0' y='0' width='2' height='2' fill='%23C03028'/%3E%3Crect x='0' y='2' width='2' height='2' fill='%23C03028'/%3E%3Crect x='0' y='4' width='2' height='2' fill='%23C03028'/%3E%3Crect x='0' y='6' width='2' height='2' fill='%23C03028'/%3E%3Crect x='0' y='8' width='2' height='2' fill='%23C03028'/%3E%3Crect x='0' y='10' width='2' height='2' fill='%23C03028'/%3E%3Crect x='2' y='2' width='2' height='2' fill='%23C03028'/%3E%3Crect x='2' y='4' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='2' y='6' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='2' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='4' y='4' width='2' height='2' fill='%23C03028'/%3E%3Crect x='4' y='6' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='4' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='6' y='6' width='2' height='2' fill='%23C03028'/%3E%3Crect x='6' y='8' width='2' height='2' fill='%23F0EAD6'/%3E%3Crect x='8' y='8' width='2' height='2' fill='%23C03028'/%3E%3C/svg%3E") 0 0, pointer !important;
+}
+
+body.theme-pokemon {
+  background: #F0EAD6;
+  color: #1a1f3c;
+  image-rendering: pixelated;
+}
+
+/* Pixel grid background texture */
+body.theme-pokemon::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(26, 31, 60, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 31, 60, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Particles — dark blue stars */
+body.theme-pokemon .space-particles { display: block; }
+body.theme-pokemon .particle { background: rgba(26, 31, 60, 0.7); box-shadow: none; border-radius: 0; }
+body.theme-pokemon .particle:nth-child(2),
+body.theme-pokemon .particle:nth-child(4),
+body.theme-pokemon .particle:nth-child(6),
+body.theme-pokemon .particle:nth-child(9),
+body.theme-pokemon .particle:nth-child(11),
+body.theme-pokemon .particle:nth-child(13),
+body.theme-pokemon .particle:nth-child(17),
+body.theme-pokemon .particle:nth-child(19),
+body.theme-pokemon .particle:nth-child(21),
+body.theme-pokemon .particle:nth-child(25) { background: rgba(26, 31, 60, 0.45); box-shadow: none; }
+
+body.theme-pokemon nav {
+  background: #1a1f3c;
+  border-bottom: 3px solid rgba(240, 234, 214, 0.15);
+  box-shadow: none;
+}
+
+body.theme-pokemon nav a {
+  color: #F0EAD6;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-bottom: none;
+}
+
+body.theme-pokemon nav a:hover,
+body.theme-pokemon nav a.active {
+  background: rgba(240, 234, 214, 0.1);
+  color: #F0EAD6;
+  border-bottom: 2px solid #F0EAD6;
+  box-shadow: none;
+  transform: none;
+}
+
+body.theme-pokemon nav a::before { display: none; }
+
+body.theme-pokemon #hero,
+body.theme-pokemon .page-header,
+body.theme-pokemon #skills,
+body.theme-pokemon #experiences,
+body.theme-pokemon #projects { background: #F0EAD6; background-color: #F0EAD6; }
+
+body.theme-pokemon .hero-text h1 {
+  font-family: 'Courier New', monospace;
+  background: none;
+  -webkit-text-fill-color: #1a1f3c;
+  color: #1a1f3c;
+  font-size: 3rem;
+  text-shadow: 3px 3px 0 rgba(26, 31, 60, 0.15);
+  letter-spacing: 2px;
+  animation: none;
+}
+
+body.theme-pokemon .hero-text h3 {
+  font-family: 'Courier New', monospace;
+  background: none;
+  -webkit-text-fill-color: #4a4f6c;
+  color: #4a4f6c;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+body.theme-pokemon .arl-badge {
+  background: #1a1f3c;
+  border: 2px solid #1a1f3c;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgba(26, 31, 60, 0.25);
+}
+
+body.theme-pokemon .arl-badge-text {
+  font-family: 'Courier New', monospace;
+  color: #F0EAD6;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+body.theme-pokemon .arl-badge-dot {
+  background: #F0EAD6;
+  box-shadow: none;
+  animation: pulse-dot-pokemon 1s steps(1) infinite;
+}
+
+@keyframes pulse-dot-pokemon {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+body.theme-pokemon .arl-research { font-family: 'Courier New', monospace; color: #4a4f6c; font-size: 0.8rem; }
+body.theme-pokemon .arl-research-icon { color: #4a4f6c; }
+body.theme-pokemon .hero-text p { font-family: 'Courier New', monospace; color: #1a1f3c; font-size: 0.95rem; line-height: 2; }
+
+body.theme-pokemon #profile-pic {
+  border-radius: 24px;
+  border: 4px solid #1a1f3c;
+  box-shadow: 5px 5px 0 rgba(26, 31, 60, 0.25);
+  background: none;
+}
+
+body.theme-pokemon #profile-pic:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 rgba(26, 31, 60, 0.25);
+}
+
+body.theme-pokemon .btn {
+  background: #1a1f3c;
+  color: #F0EAD6;
+  border-radius: 0;
+  border: 2px solid #1a1f3c;
+  box-shadow: 4px 4px 0 rgba(26, 31, 60, 0.25);
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+body.theme-pokemon .btn::before { display: none; }
+body.theme-pokemon .btn:hover { background: #2e3560; color: #F0EAD6; transform: translate(2px, 2px); box-shadow: 2px 2px 0 rgba(26,31,60,0.2); }
+
+body.theme-pokemon #about,
+body.theme-pokemon .experience,
+body.theme-pokemon .skill-card,
+body.theme-pokemon .project-card {
+  background: #e8dfc8;
+  border: 2px solid #1a1f3c;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 rgba(26, 31, 60, 0.18);
+}
+
+body.theme-pokemon #about h2,
+body.theme-pokemon #skills h2,
+body.theme-pokemon #experiences h2,
+body.theme-pokemon .page-header h1 {
+  font-family: 'Courier New', monospace;
+  background: none;
+  -webkit-text-fill-color: #1a1f3c;
+  color: #1a1f3c;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 2px solid #1a1f3c;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+body.theme-pokemon #about p,
+body.theme-pokemon .experience p,
+body.theme-pokemon .project-card p { font-family: 'Courier New', monospace; color: #1a1f3c; font-size: 0.9rem; line-height: 1.9; }
+
+body.theme-pokemon .experience h3,
+body.theme-pokemon .project-card h3 {
+  font-family: 'Courier New', monospace;
+  background: none;
+  -webkit-text-fill-color: #1a1f3c;
+  color: #1a1f3c;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body.theme-pokemon .experience:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 rgba(26,31,60,0.25); }
+body.theme-pokemon .project-card:hover { box-shadow: 7px 7px 0 rgba(26,31,60,0.25); }
+
+body.theme-pokemon .skill-card { border-radius: 0; font-family: 'Courier New', monospace; font-size: 0.75rem; color: #1a1f3c; text-transform: uppercase; letter-spacing: 1px; }
+body.theme-pokemon .skill-card:hover { background: #1a1f3c; color: #F0EAD6; box-shadow: 4px 4px 0 rgba(26,31,60,0.25); transform: translate(-2px,-2px); }
+body.theme-pokemon .project-icon { background: #1a1f3c; border-radius: 0; border: none; box-shadow: none; }
+
+body.theme-pokemon .tech-tag {
+  background: rgba(26, 31, 60, 0.07);
+  color: #1a1f3c;
+  border: 1px solid rgba(26, 31, 60, 0.25);
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+body.theme-pokemon .github-link {
+  background: #1a1f3c;
+  color: #F0EAD6;
+  border-radius: 0;
+  border: 2px solid #1a1f3c;
+  box-shadow: 4px 4px 0 rgba(26, 31, 60, 0.2);
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+body.theme-pokemon .github-link:hover { background: #2e3560; color: #F0EAD6; transform: translate(2px,2px); box-shadow: 2px 2px 0 rgba(26,31,60,0.15); }
+
+body.theme-pokemon footer {
+  background: #1a1f3c;
+  color: #F0EAD6;
+  border-top: 2px solid rgba(240, 234, 214, 0.15);
+  box-shadow: none;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+body.theme-pokemon footer a { color: rgba(240, 234, 214, 0.6); }
+body.theme-pokemon footer a:hover { color: #F0EAD6; }
+
+body.theme-pokemon .experience-preview,
+body.theme-pokemon .project-preview { border: 2px solid #1a1f3c; border-radius: 0; background: #e8dfc8; box-shadow: 4px 4px 0 rgba(26,31,60,0.18); }
+body.theme-pokemon .project-screenshot { border: 1px solid rgba(26,31,60,0.18); border-radius: 0; }
+
+body.theme-pokemon .carousel-arrow { background: #e8dfc8; border: 2px solid #1a1f3c; border-radius: 0; color: #1a1f3c; box-shadow: 3px 3px 0 rgba(26,31,60,0.18); }
+body.theme-pokemon .carousel-arrow:hover { background: #1a1f3c; color: #F0EAD6; transform: translate(-2px,-2px); box-shadow: 5px 5px 0 rgba(26,31,60,0.18); }
+body.theme-pokemon .carousel-dot { background: #e8dfc8; border: 2px solid #1a1f3c; border-radius: 0; width: 10px; height: 10px; }
+body.theme-pokemon .carousel-dot.active { background: #1a1f3c; box-shadow: 2px 2px 0 rgba(26,31,60,0.18); transform: none; }
+body.theme-pokemon .theme-switcher { border-color: rgba(255,255,255,0.08); }
+body.theme-pokemon .scroll-reveal { transition: opacity 0.4s steps(4), transform 0.4s steps(4); }

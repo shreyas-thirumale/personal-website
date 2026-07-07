@@ -14,6 +14,78 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
 
+// Experience cards — click to open link
+document.querySelectorAll('.experience[data-github]').forEach(card => {
+  card.addEventListener('click', () => {
+    window.open(card.dataset.github, '_blank');
+  });
+});
+
+// Project carousel — 3D coverflow
+const track = document.querySelector('.carousel-track');
+if (track) {
+  const cards = Array.from(track.querySelectorAll('.project-card'));
+  const dots  = Array.from(document.querySelectorAll('.carousel-dot'));
+  const total = cards.length;
+  let current = 0;
+  let autoTimer = null;
+
+  function positionCards() {
+    cards.forEach((card, i) => {
+      // relative position from current (-1, 0, 1, 2, ...)
+      let pos = i - current;
+      // wrap around for circular feel
+      if (pos > Math.floor(total / 2))  pos -= total;
+      if (pos < -Math.floor(total / 2)) pos += total;
+      // clamp to -3..3 for data attribute
+      card.dataset.pos = Math.max(-3, Math.min(3, pos));
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function goTo(index) {
+    current = ((index % total) + total) % total;
+    positionCards();
+    resetAuto();
+  }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => goTo(current + 1), 3500);
+  }
+
+  // Init
+  positionCards();
+  resetAuto();
+
+  document.querySelector('.carousel-prev')?.addEventListener('click', () => goTo(current - 1));
+  document.querySelector('.carousel-next')?.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  // Click side cards to navigate to them
+  track.addEventListener('click', e => {
+    const card = e.target.closest('.project-card');
+    if (!card) return;
+    const pos = parseInt(card.dataset.pos);
+    if (pos !== 0) {
+      e.preventDefault();
+      goTo(current + pos);
+    }
+  });
+
+  // Swipe support
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+  track.addEventListener('touchend',   e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+  });
+
+  // Pause auto-rotate on hover
+  track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  track.addEventListener('mouseleave', () => resetAuto());
+}
+
 // Theme switcher
 const savedTheme = localStorage.getItem('portfolio-theme') || 'gold';
 applyTheme(savedTheme);
@@ -27,9 +99,11 @@ document.querySelectorAll('.theme-btn').forEach(btn => {
 });
 
 function applyTheme(theme) {
-  document.body.classList.remove('theme-purple', 'theme-gold');
+  document.body.classList.remove('theme-purple', 'theme-gold', 'theme-pokemon');
   if (theme === 'purple') {
     document.body.classList.add('theme-purple');
+  } else if (theme === 'pokemon') {
+    document.body.classList.add('theme-pokemon');
   }
   document.querySelectorAll('.theme-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.theme === theme);

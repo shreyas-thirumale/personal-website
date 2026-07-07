@@ -49,39 +49,109 @@
   </header>
 
   <section id="projects">
-    <div class="project-card scroll-reveal">
-      <h3>"Second Brain" AI Companion</h3>
-      <p>Serverless multimodal AI assistant for organizing and retrieving information</p>
-      <div class="project-tech">
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">Flask</span>
-        <span class="tech-tag">GPT-5.4 mini</span>
+    <div class="carousel">
+      <button class="carousel-arrow carousel-prev" aria-label="Previous project">&#8592;</button>
+
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+
+          <div class="project-card">
+            <h3>"Second Brain" AI Companion</h3>
+            <div class="project-screenshot">
+              <img src="images/ai-companion.png" alt="AI Companion" />
+            </div>
+            <p>Serverless multimodal AI assistant for organizing and retrieving information</p>
+            <div class="project-tech">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">GPT-5.4</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale/ai-companion" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Zenith Study Hub</h3>
+            <div class="project-screenshot">
+              <img src="images/zsh.png" alt="Zenith Study Hub" />
+            </div>
+            <p>Full-stack student productivity platform</p>
+            <div class="project-tech">
+              <span class="tech-tag">Next</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale/zenith-study-hub1" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Journey Home Platform</h3>
+            <div class="project-screenshot">
+              <img src="images/journey-home.png" alt="Journey Home" />
+            </div>
+            <p>Donation management platform for NPO Journey Home</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale/journey-home" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Helping Hands</h3>
+            <div class="project-screenshot">
+              <img src="images/helping-hands.png" alt="Helping Hands" />
+            </div>
+            <p>Community volunteer coordination platform</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>AI Scrum Master</h3>
+            <div class="project-screenshot">
+              <img src="images/ai-scrum-master.png" alt="AI Scrum Master" />
+            </div>
+            <p>AI-powered Slack bot automating sprint planning, standups, and team velocity tracking</p>
+            <div class="project-tech">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Slack API</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Project Nudge</h3>
+            <div class="project-screenshot">
+              <img src="images/project-nudge.png" alt="Project Nudge" />
+            </div>
+            <p>AI-powered intern productivity nudge system for event tracking and reminders</p>
+            <div class="project-tech">
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">CodaDB</span>
+            </div>
+            <a href="https://github.com/shreyas-thirumale" class="github-link" target="_blank">View on GitHub</a>
+          </div>
+
+        </div>
       </div>
-      <a href="https://github.com/shreyas-thirumale/terraplate" class="github-link" target="_blank">View on GitHub</a>
+
+      <button class="carousel-arrow carousel-next" aria-label="Next project">&#8594;</button>
     </div>
 
-    <div class="project-card scroll-reveal">
-      <h3>Zenith Study Hub</h3>
-      <h3>  </h3>
-      <h3>  </h3>
-      <p>Full-stack student productivity platform</p>
-      <div class="project-tech">
-        <span class="tech-tag">Next.js</span>
-        <span class="tech-tag">Express.js</span>
-        <span class="tech-tag">PostgreSQL</span>
-      </div>
-      <a href="https://github.com/shreyas-thirumale/ai-companion" class="github-link" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card scroll-reveal">
-      <h3>Journey Home Platform</h3>
-      <p>Donation management platform for NPO Journey Home</p>
-      <div class="project-tech">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Firebase</span>
-        <span class="tech-tag">Figma</span>
-      </div>
-      <a href="https://github.com/shreyas-thirumale/Landmark-Explorer-iOS-App" class="github-link" target="_blank">View on GitHub</a>
+    <div class="carousel-dots">
+      <span class="carousel-dot active"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
     </div>
   </section>
 
@@ -96,7 +166,10 @@
         <span class="theme-swatch" style="background: linear-gradient(135deg, #C8A84B, #FFD700)"></span>
         <span class="theme-name">GOLD</span>
       </button>
-      
+      <button class="theme-btn" data-theme="pokemon" title="Pokémon">
+        <span class="theme-swatch" style="background: linear-gradient(180deg, #C03028 50%, #F0EAD6 50%); border: 2px solid #1a1f3c;"></span>
+        <span class="theme-name">PKM</span>
+      </button>
     </div>
   </footer>
 
